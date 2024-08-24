@@ -1,3 +1,5 @@
+USE rowers_hub;
+
 INSERT INTO rowers_hub.sessions
 ( day,
   start_time,
@@ -69,7 +71,7 @@ INSERT INTO upcoming_session_availability
 VALUES (1, 24);
 
 
-INSERT rowers
+INSERT INTO rowers
 (name, squad, level)
 VALUES
 ('Addi', 'WOMENS', 'NOVICE'),
@@ -89,5 +91,10 @@ INSERT INTO past_session_availability
 (upcoming_session_id, rower_id)
 VALUES
 (1, 1),
+(3, 1),
+(3, 2),
+(3, 3),
 (2, 1),
+(4, 1),
 (1, 3);
+
